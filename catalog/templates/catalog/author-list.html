@@ -1,0 +1,17 @@
+{% extends "catalog/templates/catalog/../base_generic.html" %} <!--Traemos la plantilla base -->
+{% block title %}<title>Authors List Page</title>{% endblock %}
+{% block content %}
+
+    <h1>Author List</h1>
+    {% if author_list %}
+    {% for author in author_list %}
+        <li><strong><a href="{% url "author-detail" author.id %}">{{ author.last_name }}, {{ author.first_name }} ({{ author.date_of_birth }})</a></strong></li>
+
+    {% endfor %}
+    {% else %}
+        <p>There are no Authors in the library</p>
+    {% endif %}
+
+
+
+{% endblock %}

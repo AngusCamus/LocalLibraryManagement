@@ -1,0 +1,12 @@
+{% extends "base_generic.html" %}
+{% block title %}<title>Manage Authors and Books Page</title>{% endblock %}
+{% block content %}
+
+    <h1>Options: </h1>
+        <li><strong><a href="{% url "author-create" %}">Create Author</a></strong></li>
+        <li><strong><a href="{% url "author-update" author.id %}">Create Author</a></strong></li>
+        <li><strong><a href="{% url "author-delete" author.id %}">Create Author</a></strong></li>
+        <li><strong><a href="{% url "author-detail" author.id %}">Create Author</a></strong></li>
+        <li><strong><a href="{% url "author-detail" author.id %}">Create Author</a></strong></li>
+        <li><strong><a href="{% url "author-detail" author.id %}">Create Author</a></strong></li>
+{% endblock %}
