@@ -43,7 +43,6 @@ class AuthorListViewTest(TestCase):
         self.assertTrue('is_paginated' in resp.context)
         self.assertTrue(resp.context['is_paginated'] == True)
         self.assertTrue( len(resp.context['author_list']) == 3)
-        #resp.context hace referencia la ctx que se le pasa al template
 
 
 class BookListViewTest(TestCase):
@@ -87,7 +86,6 @@ class BookListViewTest(TestCase):
         self.assertTrue('is_paginated' in resp.context)
         self.assertTrue(resp.context['is_paginated'] == True)
         self.assertTrue(len(resp.context['book_list']) == 3)
-        # resp.context hace referencia la ctx que se le pasa al template
 
 
 class LoanedBookInstancesByUserListViewTest(TestCase):
