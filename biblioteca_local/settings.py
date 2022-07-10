@@ -29,7 +29,7 @@ DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
 ALLOWED_HOSTS = [
     '0.0.0.0',
-    'dry-journey-94644.herokuapp.com',
+    'local-library-pole.herokuapp.com',
     '127.0.0.1'
 ]
 
