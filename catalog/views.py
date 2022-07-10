@@ -54,9 +54,6 @@ def renew_book_librarian(request, pk):
         if form.is_valid():
             # process the data in form.cleaned_data as required (here we just write it to the model due_back field)
             book_inst.due_back = form.cleaned_data['due_back']
-            #Aca sucede la magia, en el renewal-date que viene del request.post
-            #osea lo que ingresa el usuario
-            #luego de validar con "cleaned_data" se le asigna al due_back del libro que nso trajo pk
             book_inst.save()
 
             # redirect to a new URL:
@@ -68,8 +65,6 @@ def renew_book_librarian(request, pk):
         form = RenewBookModelForm(initial={'due_back': proposed_renewal_date,})
 
     return render(request, 'catalog/book_renew_librarian.html', {'form': form, 'bookinst':book_inst})
-#la vista renderiza el contexto del request, el template, el formulario con sus errores y el book de la DB.
-#todo esto para volverlo a completar
 
 #List and Details Views
 class BookListView(list.ListView):
@@ -90,7 +85,7 @@ class AuthorDetailView(detail.DetailView):
     model = Author
     template_name = "catalog/author-detail.html"
 
-#Vies for LoanedBooks
+#Views for LoanedBooks
 class LoanedBooksListView(PermissionRequiredMixin, list.ListView):
     model = BookInstance
     template_name = "catalog/bookinstance_list_borrowed_employed.html"

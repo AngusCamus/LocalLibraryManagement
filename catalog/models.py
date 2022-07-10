@@ -95,9 +95,7 @@ class BookInstance(models.Model):
         )
 
     def __str__(self):
-        """
-        String para representar el Objeto del Modelo
-        """
+
         return f"{self.book.tittle} ID: {self.id}"
     
     @property

@@ -38,7 +38,7 @@
             <li><a href="{% url "author_create" %}">Add new Author</a></li>
           {% endif %}
           <li><a href="{% url 'my-borrowed' %}">My Borrowed</a></li>
-          <li><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li><!--Esto hace que vuelvan a la pagina donde estaban luego de ir al "logout"-->
+          <li><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li><!--Return to last page visited, after logout-->
       {% else %}
         <li><a href="{% url 'login'%}?next={{request.path}}">Login</a></li>
       {% endif %}
@@ -51,7 +51,7 @@
       <div class="col-sm-10 ">
       {% block search %}{% endblock %}
       {% block content %}{% endblock %}
-      {% block pagination %}<!-- Agregamos la paginacion para cuando haya muchos libros-->
+      {% block pagination %}<!-- Add pagination for many books or author or every-->
         {% if is_paginated %}
         <div class="pagination">
           <span class="page-links">

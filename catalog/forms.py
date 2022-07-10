@@ -10,7 +10,7 @@ class RenewBookModelForm(ModelForm):
         fields = ['due_back',]
         labels = {'due_back': 'Renewal date', }
 
-    def clean_due_back(self): #clean_nombre del field
+    def clean_due_back(self): #clean field
        data = self.cleaned_data['due_back']
 
        #Check date is not in past.
