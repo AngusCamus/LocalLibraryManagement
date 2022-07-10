@@ -84,8 +84,12 @@ WSGI_APPLICATION = 'biblioteca_local.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd9ou6vtl5p09sk',
+        "USER": "zpjmqkdjcwmiot",
+        "PASSWORD": "d9854113185a04faed684250966adfcd59e32a49638c06b7d13d7641c2def80b",
+        "HOST": "ec2-34-233-115-14.compute-1.amazonaws.com",
+        "PORT": "5432"
     }
 }
 

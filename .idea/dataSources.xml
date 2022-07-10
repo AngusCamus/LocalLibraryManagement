@@ -8,5 +8,14 @@
       <jdbc-url>jdbc:sqlite:C:\Users\PC\Desktop\pycharm\biblioteca_local\db.sqlite3</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="Django default" uuid="862db5b7-df82-4cfd-b985-cafad8ace27d">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/biblioteca_local/settings.py</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://ec2-34-233-115-14.compute-1.amazonaws.com:5432/d9ou6vtl5p09sk</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
