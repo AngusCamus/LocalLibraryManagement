@@ -1,4 +1,4 @@
-# Biblioteca Local con Django
+# Biblioteca Local
 Biblioteca Local es un proyecto en Django Framework realizado por mi a modo de poner a prueba mi conocimiento, el mismo simula una web que informa los libros que dispone y ofrece un servicio de alquiler. La idea es con el paso del tiempo y adquirir nuevas habilidades ir mejorando la pagina.
 
 El sitio se encuentra desplegado en Heroku y pueden visitarlo desde el siguiente [Link](https://dry-journey-94644.herokuapp.com/)
